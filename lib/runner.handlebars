@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <link rel="stylesheet" type="text/css" href="{{jasmine_stylesheet_href}}"/>
     
     <script type="text/javascript" src="{{jasmine_js_src}}"></script>
+    <script type="text/javascript" src="{{jasmine_html_js_src}}"></script>
 
     {{#each includes}}
     <script type="text/javascript" src="{{this}}"></script>
@@ -21,12 +24,12 @@
       var jasmineEnv = jasmine.getEnv();
       jasmineEnv.updateInterval = 1000;
 
-      var htmlReporter = new jasmine.HtmlReporter();
+      var trivialReporter = new jasmine.TrivialReporter();
 
-      jasmineEnv.addReporter(htmlReporter);
+      jasmineEnv.addReporter(trivialReporter);
 
       jasmineEnv.specFilter = function(spec) {
-      return htmlReporter.specFilter(spec);
+      return trivialReporter.specFilter(spec);
       };
 
       var currentWindowOnload = window.onload;

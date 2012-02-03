@@ -1,6 +1,6 @@
 {
-  "includes": ["js/ember.js",
-               "js/jquery.js"],
+  "includes": ["js/jquery-1.7.1.min.js",
+	       "js/ember.min.js"],
   
   "app_src": ["lib/core.js",
               "lib/statemanager.js"],
