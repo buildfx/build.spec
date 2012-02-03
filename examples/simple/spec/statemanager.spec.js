@@ -1,7 +1,9 @@
 describe('statemanager', function() {
 
-  it('is sane', function() {
-    expect(true).toBe(true);
+  it('starts with the "home" state', function() {
+    var stateName = MyApp.getPath('statemanager.currentState.name');
+    expect(stateName).toEqual('.home');
   });
+
 
 });

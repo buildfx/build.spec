@@ -1,6 +1,9 @@
 MyApp.statemanager = Ember.StateManager.create({
 
-  start: Ember.State.create({
+  initialState: 'home',
+
+  home: Ember.State.create({
+    
   })
 
 });
