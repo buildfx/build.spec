@@ -6,6 +6,8 @@
               "lib/statemanager.js"],
 
   "spec_src": ["spec/core.spec.js",
-               "spec/statemanager.spec.js"]
+               "spec/statemanager.spec.js"],
+
+  "stylesheets": ["css/main.css"]
 
 }
