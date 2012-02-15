@@ -3,6 +3,10 @@
   <head>
 
     <link rel="stylesheet" type="text/css" href="{{jasmine_stylesheet_href}}"/>
+
+    {{#each stylesheets}}
+    <link rel="stylesheet" type="text/css" href="{{this}}"/>
+    {{/each}}
     
     <script type="text/javascript" src="{{jasmine_js_src}}"></script>
     <script type="text/javascript" src="{{jasmine_html_js_src}}"></script>
@@ -48,4 +52,7 @@
       })();
     </script>
   </head>
+  <body>
+    <div id="buildspec-test-ui"/>
+  </body>
 </html>
