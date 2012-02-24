@@ -16,6 +16,8 @@ Configure your spec project in a buildspec.json file. These settings can be conf
 
 - includes
 
+- stylesheets
+
 
 
 runner_file
@@ -40,6 +42,10 @@ includes
 An optional array of JavaScript files that the JavaScript files in app_src depend on.
 For example, your JavaScript application files may depend on JQuery, Ember.js, etc.
 
+
+stylesheets
+-----------
+Optional array of CSS files that must be referenced by the test runner.
 
 
 Usage
